@@ -154,27 +154,27 @@
    ```
 
 3. **브랜치 생성**  
-  ```
-   - 예: `git checkout -b week1-1-honggildong`
-  ```
+   ```
+    - 예: `git checkout -b week1-1-honggildong`
+   ```
 
 4. **작업 후 커밋**
-  ```
-   - 커밋 메시지 예시:  
-     - `feat: 1주차-1 홍길동 BOJ1234 문제풀이`  
-     - `fix: 1주차-1 홍길동 BOJ5678 버그 수정`
-  ```
+   ```
+    - 커밋 메시지 예시:  
+      - `feat: 1주차-1 홍길동 BOJ1234 문제풀이`  
+      - `fix: 1주차-1 홍길동 BOJ5678 버그 수정`
+   ```
 
 5. **푸시(Push)**  
-  ```
-   - 예: `git push origin week1-hong`
-  ```
+   ```
+    - 예: `git push origin week1-hong`
+   ```
 
 6. **Pull Request**  
-  ```
-   - GitHub에서 원본 레포지토리(base: main ← compare: week1-hong)로 PR 생성  
-   - 별도의 리뷰 없이 개인이 바로 병합(Merge)
-  ```
+   ```
+    - GitHub에서 원본 레포지토리(base: main ← compare: week1-hong)로 PR 생성  
+    - 별도의 리뷰 없이 개인이 바로 병합(Merge)
+   ```
 
 ---
 
