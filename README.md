@@ -15,9 +15,10 @@
    2. [라이브 코딩 기간](#2-라이브-코딩-기간)  
 4. [폴더 구조](#폴더-구조)  
 5. [문제 제출 규칙](#문제-제출-규칙)  
-6. [Git 사용 가이드](#git-사용-가이드)  
-7. [일정](#일정)  
-8. [문의](#문의)
+6. [Git 사용 가이드](#git-사용-가이드)
+7. [추가 규칙](#추가 규칙)
+8. [일정](#일정)  
+9. [문의](#문의)
 
 ---
 
@@ -139,12 +140,12 @@
 
 ## 문제 제출 규칙
 
-1) 알고리즘 재활 기간  
+### 1) 알고리즘 재활 기간  
    - 매주 6문제(3+3)  
    - **화·금 0시**(월·목 자정) 전까지 제출  
    - 제출 여부만 확인 (코드 리뷰 없음)
 
-2) 라이브 코딩 기간  
+### 2) 라이브 코딩 기간  
    - 라이브 코딩/숙제 폴더에 본인 이름(또는 아이디)이 포함된 파일 업로드  
    - 마감 시간 동일 (화·금 0시)
 
@@ -152,38 +153,87 @@
 
 ## Git 사용 가이드
 
-1. **원본 레포지토리 Fork**  
+### 1. 원본 레포지토리 Fork
+   - 원본 레포지토리를 개인 GitHub 계정으로 Fork합니다.
+
+### 2. 로컬 Clone
+   - Fork한 저장소를 로컬 환경으로 Clone합니다.
    ```
-    - 스터디용 원본 레포를 개인 GitHub 계정으로 Fork
+      git clone https://github.com/<본인계정>/알쓰(흥미진진한코딩여행).git
    ```
 
-2. **로컬 Clone**  
+### 3. **브랜치 생성**
+   - 작업 시작 전에 반드시 새 브랜치를 생성합니다.
+   - 브랜치명은 다음 규칙을 따릅니다:
+   - week<주차>-<세션>-<이름>
+   - 예시 : 
    ```
-    - 예: `git clone https://github.com/본인계정/알쓰(흥미진진한코딩여행).git`
-   ```
-
-3. **브랜치 생성**  
-   ```
-    - 예: `git checkout -b week1-1-honggildong`
-   ```
-
-4. **작업 후 커밋**
-   ```
-    - 커밋 메시지 예시:  
-      - `feat: 1주차-1 홍길동 BOJ1234 문제풀이`  
-      - `fix: 1주차-1 홍길동 BOJ5678 버그 수정`
+      git checkout -b week1-1-honggildong
    ```
 
-5. **푸시(Push)**  
+### 4. **작업 후 커밋**
+   - 작업 내용을 저장소에 추가하고 커밋합니다.
+   - 커밋 메시지 규칙:
+      - feat: 1주차-1 홍길동 BOJ1234 문제풀이
+      - fix: 1주차-1 홍길동 BOJ5678 문제 수정
+   - 커밋 명령어 예시:
    ```
-    - 예: `git push origin week1-hong`
+      git add .
+      git commit -m "feat: 1주차-1 홍길동 BOJ1234 문제풀이" || git commit -m "feat: 1주차-1 홍길동 BOJ1234 BOJ5678 BOJ9999 문제풀이" 
    ```
 
-6. **Pull Request**  
+### 5. **푸시(Push)**  
+   - 작업한 내용을 개인 Fork 저장소로 Push합니다.
    ```
-    - GitHub에서 원본 레포지토리(base: main ← compare: week1-hong)로 PR 생성  
-    - 별도의 리뷰 없이 개인이 바로 병합(Merge)
+      git push origin week1-1-honggildong
    ```
+
+### 6. **Pull Request**  
+   - GitHub에서 개인 Fork 저장소에서 원본 저장소로 Pull Request를 생성합니다.
+   - PR 생성 시:
+      - Base: 원본 저장소의 main 브랜치
+      - Compare: 자신의 작업 브랜치
+   - PR 제목 및 설명 규칙:
+      - 제목: [1주차-1] 홍길동 문제 풀이
+      - 설명 : 
+         ```
+            - 1주차 1세션 문제 풀이
+            - BOJ1234: 문제 이름
+            - BOJ5678: 문제 이름
+         ```
+
+### 7. **Pull Request Merge**  
+   - 생성한 PR은 본인이 직접 Merge합니다.
+   - GitHub에서 Merge 버튼을 눌러 작업을 반영합니다.
+      - Merge 방식: Squash and Merge
+    
+### 8. **브렌치 삭제**  
+   - Merge 완료 후, 사용했던 브랜치를 삭제합니다.
+   ```
+      git branch -d week1-1-honggildong  # 로컬 브랜치 삭제
+      git push origin --delete week1-1-honggildong  # 원격 브랜치 삭제
+   ```
+
+---
+
+## 추가 규칙
+
+### 1. 항상 브랜치를 사용하여 작업
+   - main 브랜치에서 직접 작업하거나 Push하지 않습니다.
+   - 새 작업은 반드시 브랜치를 생성한 후 진행합니다.
+
+### 2. 원본 저장소 최신 상태 동기화
+   - 원본 저장소의 업데이트 내용을 정기적으로 Fork 저장소에 반영합니다.
+   ```
+      git remote add upstream https://github.com/goldenkiwi-hyeuk/Alsseu-ExcitingCodingJourney.git
+      git fetch upstream
+      git merge upstream/main
+      git push origin main
+   ```
+
+### 3. 문제 풀이 파일 규칙
+   - 파일명은 다음 형식을 따릅니다: BOJ<문제번호>_<문제이름>.java
+   - 예시: BOJ1234_정렬.java
 
 ---
 
