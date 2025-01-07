@@ -1,3 +1,5 @@
+![배너 이미지](./image/banner.png)
+
 # 알쓰(흥미진진한 코딩 여행)
 
 > 기업 코딩 테스트 합격을 목표로 하는 **Java 기반 알고리즘 스터디**입니다.
@@ -38,6 +40,11 @@
         </a>
     </td>
     <td>
+        <a href="https://github.com/doongyeop">
+            <img src="https://avatars.githubusercontent.com/u/164111972?v=4" width="100px" />
+        </a>
+    </td>
+    <td>
         <a href="https://github.com/jun-23">
             <img src="https://avatars.githubusercontent.com/u/78009502?v=4" width="100px" />
         </a>
@@ -51,10 +58,12 @@
 
   <tr> 
     <td align="center"><a href="https://github.com/goldenkiwi-hyeuk">박성혁</a></td>
+    <td align="center"><a href="https://github.com/doongyeop">이동엽</a></td>
     <td align="center"><a href="https://github.com/jun-23">정해준</a></td>
     <td align="center"><a href="https://github.com/gyungmean">최은혜</a></td>
   </tr>
 </table>
+
 ---
 
 ## 진행 방식
