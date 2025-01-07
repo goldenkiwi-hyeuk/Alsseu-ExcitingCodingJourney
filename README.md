@@ -1,4 +1,4 @@
-![배너 이미지](./images/banner.png)
+![배너 이미지](./image/banner.png)
 
 # 알쓰(흥미진진한 코딩 여행)
 
