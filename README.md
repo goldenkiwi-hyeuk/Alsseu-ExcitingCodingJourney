@@ -61,7 +61,7 @@
     <td align="center"><a href="https://github.com/goldenkiwi-hyeuk">박성혁</a></td>
     <td align="center"><a href="https://github.com/doongyeop">이동엽</a></td>
     <td align="center"><a href="https://github.com/jun-23">정해준</a></td>
-    <td align="center"><a href="https://github.com/gyungmean">최은혜</a></td>
+    <td align="center"><a href="https://github.com/EH05">최은혜</a></td>
   </tr>
 </table>
 
