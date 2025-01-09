@@ -194,19 +194,11 @@
    - PR 생성 시:
       - Base: 원본 저장소의 main 브랜치
       - Compare: 자신의 작업 브랜치
-   - PR 제목 및 설명 규칙:
-      - 제목: [1주차-1] 홍길동 문제 풀이
-      - 설명 : 
-         ```
-            - 1주차 1세션 문제 풀이
-            - BOJ1234: 문제 이름
-            - BOJ5678: 문제 이름
-         ```
 
 ### 7. **Pull Request Merge**  
    - 생성한 PR은 본인이 직접 Merge합니다.
    - GitHub에서 Merge 버튼을 눌러 작업을 반영합니다.
-      - Merge 방식: Squash and Merge
+      - Merge 방식: Create a merge commit
     
 ### 8. **브렌치 삭제**  
    - Merge 완료 후, 사용했던 브랜치를 삭제합니다.
