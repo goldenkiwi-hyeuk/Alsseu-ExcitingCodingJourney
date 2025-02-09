@@ -79,7 +79,6 @@ class Solution {
                 if (!isIn(nx1, ny1)) continue;
                 if (rVisited[nx1][ny1]) continue;
                 if (map[nx1][ny1] == 5) continue;
-                if ((nx1 == bx && ny1 == by) continue;
 
                 // 파랑이동
                 for (int d2 = 0; d2 < 4; d2++) {
@@ -88,7 +87,7 @@ class Solution {
                     if (!isIn(nx2, ny2)) continue;
                     if (bVisited[nx2][ny2]) continue;
                     if (map[nx2][ny2] == 5) continue;
-                    if (nx2 == rx && ny2 == ry))continue;
+                    if ((nx2 == rx && ny2 == ry) && (nx1 == bx && ny1 == by)) continue;
                     if (nx1 == nx2 && ny1 == ny2) continue;
 
                     rVisited[nx1][ny1] = true;
