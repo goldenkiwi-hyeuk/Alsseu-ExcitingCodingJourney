@@ -23,7 +23,7 @@ class Solution {
 
 
     private void dfs(int x, int y, int cnt, String str) {
-        if (!answer.equals("impossible")) return;
+        if (!answer.equals("impossible")) return; // answer이 변했으면 종료. -> 최초에 생성된 문자열이 사전순 첫번째.
 
         if (cnt == 0) {
             if (x == gx && y == gy) {
