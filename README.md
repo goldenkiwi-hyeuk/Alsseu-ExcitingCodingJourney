@@ -55,6 +55,11 @@
             <img src="https://avatars.githubusercontent.com/u/133950134?v=4" width="100px" />
         </a>
     </td>
+     <td>
+        <a href="https://github.com/liarreez">
+            <img src="https://avatars.githubusercontent.com/u/112878394?v=4" width="100px" />
+        </a>
+    </td>
   </tr>
 
   <tr> 
@@ -62,6 +67,7 @@
     <td align="center"><a href="https://github.com/doongyeop">이동엽</a></td>
     <td align="center"><a href="https://github.com/jun-23">정해준</a></td>
     <td align="center"><a href="https://github.com/EH05">최은혜</a></td>
+   <td align="center"><a href="https://github.com/liarreez">양지웅</a></td>
   </tr>
 </table>
 
@@ -89,6 +95,7 @@
   - 재활 기간 종료 후, **매주 2회** 진행
 - **시간**  
   - 1회당 약 **1시간 30분**
+  - 매주 월요일, 목요일 AM 09:00
 - **방식**  
   1. **숙제(공통 문제) 풀이 공유** (약 15분)  
      - 이전 숙제 문제에서 접근 방식 간단 공유  
@@ -146,7 +153,7 @@
 
 ### 2) 라이브 코딩 기간  
    - 라이브 코딩/숙제 폴더에 본인 이름(또는 아이디)이 포함된 파일 업로드  
-   - 마감 시간 동일 (화·금 0시)
+   - 마감 시간 (다음 라이브 코딩 이전까지, 월/목 AM 09:00)
 
 ---
 
@@ -237,7 +244,7 @@
   - **화·금 0시** 마감
 
 - **라이브 코딩 기간**  
-  - 재활 기간 후, 매주 2회 진행  
+  - 재활 기간 후, 매주 2회 진행 (월/목 AM 09:00)
   - 1회당 약 1시간 30분  
   - 숙제 + 라이브 코딩 + 문제 풀이 공유
 
