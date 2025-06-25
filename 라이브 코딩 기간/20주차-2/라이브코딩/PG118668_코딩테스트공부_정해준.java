@@ -1,4 +1,4 @@
-public class PG118688_코딩테스트공부_정해준 {
+public class PG118668_코딩테스트공부_정해준 {
     class Solution {
         public int solution(int alp, int cop, int[][] problems) {
             int answer = 0;
